@@ -26,7 +26,7 @@ public class RangakaranamjdbcjourneyApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		
+		System.out.println("logging out stuff");
 		logger.info("all users -> {}",dao.findAll());
 	    logger.info("user if 10001 -> {}",dao.findById(10001) );
 	    logger.info("number of people deleted -> {}",dao.deleteById(10002));
